@@ -26,6 +26,14 @@
     color: #424242;
 }
 
+.dark03 {
+    color: #727272;
+}
+
+.color_primary {
+    color: #FF900E;
+}
+
 /* .dark03 */
 
 .bg-light {
@@ -61,11 +69,10 @@
 
 
 
-
-
 /* navbar related styles  */
 .brand,
-.banner_tittle {
+.banner_tittle,
+.feature_Tittie {
     font-size: 3rem;
 }
 
@@ -85,7 +92,33 @@
     font-size: 18px;
 }
 
+/* Feature section styles */
+.feature {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 70px;
 
+}
+
+.feature_imgs img {
+    width: 100%;
+
+}
+
+.feature_imgs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.feature_Tittie {
+    margin-bottom: 0;
+}
+
+.feature_Description {
+    margin: 30px 0;
+}
 
 
 
@@ -93,19 +126,39 @@
 /* Media query or Responsive website */
 /* Small Device */
 @media screen and (max-width:576px) {
-    
-/* header section */
+
+    /* header section */
     .display_flex {
         flex-direction: column;
     }
+
     .banner_tittle {
         font-size: 2rem;
     }
+
     .navLinks li {
         margin-bottom: 10px;
     }
+
     .navLinks a {
-    font-size: 28px;
-}
+        font-size: 28px;
+
+
+
+    }
+
+    /* Feature */
+    .feature{
+       display: flex;
+       flex-direction: column-reverse;
+    }
+    .feature_text{
+        text-align: center;
+    }
+
+
+
+
+
 
 }
