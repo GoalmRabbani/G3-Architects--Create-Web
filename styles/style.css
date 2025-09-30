@@ -14,6 +14,16 @@
 
 
 /* shared styles */
+.brand,
+.banner_tittle,
+.section_Tittie {
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+
+
+
 .display_flex {
     display: flex;
 }
@@ -70,11 +80,7 @@
 
 
 /* navbar related styles  */
-.brand,
-.banner_tittle,
-.feature_Tittie {
-    font-size: 3rem;
-}
+
 
 .navber {
     align-items: center;
@@ -112,14 +118,36 @@
     gap: 24px;
 }
 
-.feature_Tittie {
-    margin-bottom: 0;
+/* Some Facts styles*/
+.some_Facts{
+    margin: 6rem 0;
+}
+.fact_Items{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 50px;
+    margin: 100px 0;
+
+}
+.fact_Item{
+
+    /* width: 50%; */
+    text-align: center;
+    border: 1px #FF900E solid;
+    border-radius: 10px;
+    padding: 45px 35px;
+}
+.fact_Item img {
+   padding: 0 60px;
+   margin-bottom: 0;
+}
+.fact_Item h3,p{
+    margin: 5px 0;
+
 }
 
-.feature_Description {
-    margin: 30px 0;
-}
 
+/* -------------------------------------------- */
 
 
 
@@ -154,6 +182,11 @@
     }
     .feature_text{
         text-align: center;
+    }
+
+    /* some_Facts */
+    .fact_Items{
+        grid-template-columns: repeat(1,1fr);
     }
 
 
