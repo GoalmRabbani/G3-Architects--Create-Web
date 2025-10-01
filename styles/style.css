@@ -118,6 +118,41 @@
     gap: 24px;
 }
 
+/* feature will love enjoy */
+.feature2_Tittle{
+    /* max-width: 460px; */
+    padding-left: 20px;
+    border-left: 5px #FF900E solid;
+}
+.feature2_card{
+    padding:30px;
+    box-shadow: 0 4px 30px 0 rgba(255, 144, 14, 0.1);
+    margin-bottom: 20px;
+    border-radius: 10px;
+
+}
+.feature2_card_Tittle{
+    font-size: 25px;
+    font-weight: 600;
+    /* margin: 0; */
+}
+.feature2{
+    margin: 5rem 0 0 0;
+    display: flex;
+    gap: 140px;
+}
+
+#experience_Badge{
+    padding: 45px 42px;
+    margin-left: -100px;
+    margin-top: -100px;
+}
+#experience_Year{
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+
 /* Some Facts styles*/
 .some_Facts {
     margin: 6rem 0;
@@ -193,7 +228,7 @@ footer {
 @media screen and (max-width:576px) {
 
     /* header section */
-    .display_flex {
+    .display_flex,.feature2 {
         flex-direction: column;
     }
 
@@ -222,6 +257,17 @@ footer {
         text-align: center;
     }
 
+
+    .feature2_img img {
+        width: 100%;
+    }
+
+    #experience_Badge{
+        margin-left: 20px;
+        margin-top: -30px;
+    }
+     
+    
     /* some_Facts */
     
 
